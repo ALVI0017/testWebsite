@@ -1,10 +1,11 @@
   // Function to receive messages from Flutter
   function receiveMessageFromFlutter(message) {
-    document.getElementById('messageFromFlutter').innerText = message;
+
+    document.getElementById('messageFromFlutter').innerText = message?.name;
   }
 
   // Function to send a message to Flutter
   function sendMessageToFlutter() {
-    var message = "Hello from the web!";
+    var message ={ data: "Hello from the web!",id:'adsadss'};
     messageHandler.postMessage(message);
   }
