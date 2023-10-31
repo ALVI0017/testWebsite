@@ -6,6 +6,8 @@
 
   // Function to send a message to Flutter
   function sendMessageToFlutter() {
-    var message ={ data: "Hello from the web!",id:'adsadss'};
-    messageHandler.postMessage(message);
+    var message1 ={ data: "Hello from the web!",id:'adsadss'};
+    var message2 ="Test";
+    messageHandler.postMessage(message1);
+    messageHandler.postMessage(message2);
   }
