@@ -21,5 +21,6 @@
   ////// This is for .net Maui
   function sendMessageToMaui(data) {
     var message ={data: "Hello from the web!",id:'adsadss'};
-    window.external.notify(message.data);
+
+    return message.data;
 }
