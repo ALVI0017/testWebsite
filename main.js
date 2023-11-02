@@ -8,7 +8,7 @@
   function receiveMessageFromMAUI(message) {
 
     const obj = JSON.parse(message);
-    document.getElementById('messageFromMaui').innerText = obj?.name;
+    document.getElementById('messageFromMaui').innerText = message;
   }
 
   // Function to send a message to Flutter
