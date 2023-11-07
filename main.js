@@ -18,6 +18,11 @@
     messageHandler.postMessage(jsonString);
   }
 
+
+  function sendDataToAndoridKotlinApp() {
+    Android.showToast("Button clicked fromweb");
+}
+
   ////// This is for .net Maui
   function sendMessageToMaui(data) {
     var message ={data: "Hello from the web!",id:'adsadss'};
