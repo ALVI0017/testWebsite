@@ -1,31 +1,47 @@
-  // Function to receive messages from Flutter
+  // Flutter
+  // Function to receive messages 
   function receiveMessageFromFlutter(message) {
-
-    
     document.getElementById('messageFromFlutter').innerText = message?.name;
   }
-
-  function receiveMessageFromMAUI(message) {
-
-    const obj = JSON.parse(message);
-    document.getElementById('messageFromMaui').innerText = obj?.name;
-  }
-
-  // Function to send a message to Flutter
+  // Function to send a message
   function sendMessageToFlutter() {
-    var message ={data: "Hello from the web!",id:'adsadss'};
+    var message ={data: "Hello from the web!",id:'1'};
     var jsonString = JSON.stringify(message);
     messageHandler.postMessage(jsonString);
   }
 
-
+  // Kotlin
+  // Function to receive messages  
+  function receiveMessageFromKotlin(message) {
+    const obj = JSON.parse(message);
+    document.getElementById('messageFromKotlin').innerText = obj?.name;
+  }
+  // Function to send a message  
   function sendDataToAndoridKotlinApp() {
-    Android.showToast("Button clicked fromweb");
-}
+    var message ={data: "Hello from the web!",id:'1'};
+    Android.showToast(message?.data);
+  }
 
-  ////// This is for .net Maui
-  function sendMessageToMaui(data) {
-    var message ={data: "Hello from the web!",id:'adsadss'};
-
+  // Maui
+  // Function to receive messages  
+  function receiveMessageFromMAUI(message) {
+    const obj = JSON.parse(message);
+    document.getElementById('messageFromMaui').innerText = obj?.name;
+  }
+  // Function to send a message  
+  function sendMessageToMaui() {
+    var message ={data: "Hello from the web!",id:'1'};
     return message.data;
-}
+  }
+  
+  // iOS
+  // Function to receive messages  
+  function receiveMessageFromiOS(message) {
+    const obj = JSON.parse(message);
+    document.getElementById('messageFromiOS').innerText = obj?.name;
+  }
+  // Function to send a message  
+  function sendMessageToiOS() {
+    var message ={data: "Hello from the web!",id:'1'};
+    window.webkitURL.messageHandler.jsMessageHandler.postMessage(message.data);
+  }
