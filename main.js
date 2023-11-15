@@ -43,5 +43,5 @@
   // Function to send a message  
   function sendMessageToiOS() {
     var message ={data: "Hello from the web!",id:'1'};
-    window.webkitURL.messageHandler.jsMessageHandler.postMessage(message.data);
+    window.webkit.messageHandler.jsMessageHandler.postMessage(message.data);
   }
