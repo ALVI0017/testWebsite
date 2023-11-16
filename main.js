@@ -35,14 +35,14 @@
   }
   
   // iOS
-  // Function to receive messages  
+  // Function to receive messages FROM APP TO web  
   function receiveMessageFromiOS(message) {
     const obj = JSON.parse(message);
     document.getElementById('messageFromiOS').innerText = obj?.name;
   }
-  // Function to send a message  
+  // Function to send a message  from web to app
   function sendMessageToiOS() {
     var message ={data: "Hello from the web!",id:'1'};
   
-    window.webkit.messageHandler.jsMessageHandler.postMessage(message.data);
+    window.webkit.messageHandlers.jsMessageHandler.postMessage(message.data);
   }
