@@ -2,7 +2,7 @@
    "applinks": {
      "details": [
        {
-         "appIDs": ["com.Hossain.Browser-to-app-open-test"],
+         "appIDs": ["7DM4GGDQAJ.com.Hossain.Browser-to-app-open-test"],
          "components": [
             {
                "paths": ["/testpage/*"],
