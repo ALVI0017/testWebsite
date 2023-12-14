@@ -6,7 +6,7 @@
          "components": [
             {
 
-               "/":"/testpage", 
+               "*":"/testpage", 
                "comment": "Opens any URL starting with /testpage/"
              }
          ]
