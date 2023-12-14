@@ -3,7 +3,12 @@
      "details": [
        {
          "appIDs": ["com.Hossain.Browser-to-app-open-test"],
-         "components": []
+         "components": [
+            {
+               "paths": ["/testpage/*"],
+               "comment": "Opens any URL starting with /testpage/"
+             }
+         ]
        }
      ]
    }
