@@ -5,8 +5,11 @@
          "appIDs": ["7DM4GGDQAJ.com.Hossain.Browser-to-app-open-test"],
          "components": [
             {
-
-               "*":"/testpage", 
+               "/":"/testpage", 
+               "comment": "Opens any URL starting with /testpage/"
+             },
+             {
+               "/":"/testpage/*", 
                "comment": "Opens any URL starting with /testpage/"
              }
          ]
